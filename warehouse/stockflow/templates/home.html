@@ -1,0 +1,13 @@
+
+{% extends 'layout_master.html' %}
+
+{% block content %}
+
+<h1>Warehouse Tracker</h1>
+<ul>
+    <li><a href="{% url 'add_product' %}">Add Product</a></li>
+    <li><a href="{% url 'add_transaction' %}">Add Stock Movement</a></li>
+    <li><a href="{% url 'inventory' %}">View Inventory</a></li>
+</ul>
+
+{% endblock %}

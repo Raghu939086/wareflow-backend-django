@@ -1,0 +1,15 @@
+
+{% extends 'layout_master.html' %}
+
+{% block content %}
+
+<h2>Record Stock IN/OUT</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ transaction_form.as_p }}
+    {{ entry_form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+<a href="{% url 'home' %}">Back to Home</a>
+
+{% endblock %}
