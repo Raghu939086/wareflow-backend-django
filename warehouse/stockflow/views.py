@@ -26,7 +26,7 @@ def add_transaction(request):
     else:
         transaction_form = StockTransactionForm()
         entry_form = StockEntryForm()
-    return render(request, 'add_transaction.html', {
+    return render(request, 'add_Transaction.html', {
         'transaction_form': transaction_form,
         'entry_form': entry_form
     })
